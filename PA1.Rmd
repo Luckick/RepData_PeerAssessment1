@@ -1,10 +1,9 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
+title: 'Reproducible Research: Peer Assessment 1'
+author: "Qinqing Liu"
+date: "10/1/2016"
+output: pdf_document
 ---
-
 
 ## Loading and preprocessing the data
 ```{r}
@@ -111,3 +110,4 @@ ggplot(interval_full, aes(x=interval, y=steps, color = weektype)) +
   geom_line() +
   facet_wrap(~weektype, ncol = 1, nrow=2)
 ```
+
